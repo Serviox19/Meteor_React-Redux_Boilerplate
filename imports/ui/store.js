@@ -1,5 +1,4 @@
 import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
-import appReducer from '../ui/reducers';
+import Async from './middlewares/async';
 
-export const store = createStore(appReducer, applyMiddleware(thunk));
+export const store = applyMiddleware(Async)(createStore)

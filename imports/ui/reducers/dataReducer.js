@@ -1,11 +1,9 @@
-import { GET_DATA } from '';
+import { GET_DATA } from '../actions/types';
 
-const INITIAL_STATE = {};
-
-export default (state = INITIAL_STATE, action) => {
+export default (state = [], action) => {
   switch (action.type) {
     case GET_DATA:
-      return: action.payload;
+      return [ ...state, ...action.payload ];
     default:
       return state;
   }

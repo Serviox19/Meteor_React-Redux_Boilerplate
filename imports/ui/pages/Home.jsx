@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import DataList from '../components/DataList';
 
 class Home extends Component {
 
 
   render() {
     return (
-      <h1>Home Page</h1>
+      <div>
+        <h1>Home Page</h1>
+        <DataList />
+      </div>
     );
   }
 }

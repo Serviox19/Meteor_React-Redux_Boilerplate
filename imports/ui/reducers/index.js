@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
+import DataReducer from './dataReducer';
 
 
 const appReducer = combineReducers({
-  data: () => []
+  data: DataReducer
 });
 
 export default appReducer;
